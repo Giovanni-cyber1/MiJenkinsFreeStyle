@@ -23,26 +23,23 @@ public class MavenFreeStyleTest {
     /**
      * Test of main method, of class MavenFreeStyle.
      */
-    @Test
+     @Test
     public void testMain() {
-        System.out.println("main");
+        // Solo verificamos que main no lance excepciones
         String[] args = null;
         MavenFreeStyle.main(args);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        assertTrue(true);
     }
 
     @Test 
     public void testFibonacci(){
-        //App test = new App();
         MavenFreeStyle instance = new MavenFreeStyle();
-	assertTrue(instance.fibonacci(1) == 1);
+        assertTrue(instance.fibonacci(1)); // 1 pertenece a Fibonacci
     }
+
     @Test	
     public void testFibonacci2(){
-	//App test = new App();
         MavenFreeStyle instance = new MavenFreeStyle();
-        assertTrue(instance.fibonacci(10) == 5);
+        assertFalse(instance.fibonacci(10)); // 10 NO pertenece a Fibonacci
     }
-    
 }
