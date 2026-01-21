@@ -42,7 +42,7 @@ public class MavenFreeStyleTest {
     public void testFibonacci2(){
 	//App test = new App();
         MavenFreeStyle instance = new MavenFreeStyle();
-        assertTrue(instance.fibonacci(10) == 5);
+        assertTrue(instance.fibonacci(10) == 55);
     }
     
 }
