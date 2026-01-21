@@ -9,7 +9,6 @@ public class MavenFreeStyleTest {
     public void testMain() {
         String[] args = {};
         MavenFreeStyle.main(args);
-        // Si llega aquí, el test pasa
     }
 
     @Test 
@@ -23,7 +22,4 @@ public class MavenFreeStyleTest {
         MavenFreeStyle instance = new MavenFreeStyle();
         assertEquals(55, instance.fibonacci(10));
     }
-}
-
-    
 }
